@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Input = styled.input`
+const Root = styled.input`
   width: 100%;
   padding: 10px 15px;
   font-size: 16px;
@@ -23,7 +23,7 @@ type Props = {
 };
 
 const InputText: React.FC<Props> = ({ ...props }) => {
-  return <Input type='text' {...props} />;
+  return <Root type='text' {...props} />;
 };
 
 export default InputText;
