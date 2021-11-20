@@ -1,7 +1,7 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { useCallback } from 'react';
 import Button from '../components/atoms/Button';
-import InputText from '../components/atoms/InputText';
+import Header from '../components/organisms/Header';
 const generateRandomString = (length: number): string => {
   let text = '';
   const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -18,7 +18,7 @@ const Home = ({ loginPath }: InferGetStaticPropsType<typeof getStaticProps>) => 
   }, [loginPath]);
   return (
     <>
-      <InputText placeholder='アルバム・アーティスト名・曲名を入力してください' />
+      <Header />
       <Button size='large' onClick={login}>
         Sign in Spotify
       </Button>

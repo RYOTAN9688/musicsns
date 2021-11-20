@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Root = styled.input`
-  width: 100%;
+  width: 50%;
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 4px;
