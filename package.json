@@ -12,6 +12,7 @@
     "@types/react": "^17.0.35",
     "@types/styled-components": "^5.1.15",
     "axios": "^0.24.0",
+    "babel-plugin-styled-components": "^1.13.3",
     "cookie": "^0.4.1",
     "next": "12.0.4",
     "react": "17.0.2",

@@ -1,5 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { useCallback } from 'react';
+import Button from '../components/atoms/Button';
 import InputText from '../components/atoms/InputText';
 const generateRandomString = (length: number): string => {
   let text = '';
@@ -18,7 +19,9 @@ const Home = ({ loginPath }: InferGetStaticPropsType<typeof getStaticProps>) => 
   return (
     <>
       <InputText placeholder='アルバム・アーティスト名・曲名を入力してください' />
-      <button onClick={login}> Sign in with Spotify</button>;
+      <Button size='large' onClick={login}>
+        Sign in Spotify
+      </Button>
     </>
   );
 };
